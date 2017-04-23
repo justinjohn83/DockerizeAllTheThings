@@ -1,6 +1,11 @@
-<h1>
-  {{title}}
-</h1>
-<ul>
-  <li *ngFor="let product of products">{{ product }}</li>
-  </ul>
+<md-toolbar color="primary">
+  Products
+</md-toolbar>
+
+<div class="app-content">
+  <md-card>
+    <md-list>
+      <md-list-item *ngFor="let product of products">{{ product }}</md-list-item>
+    </md-list>
+  </md-card>
+</div>
