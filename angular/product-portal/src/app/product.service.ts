@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class ProductService {
-    getProducts(): string [] { 
-        return ['Khakis','Jeans','Pizzas']; 
+    getProducts(): Promise<string []> { 
+        return Promise.resolve(['Khakis','Jeans','Pizzas']); 
     }
 }

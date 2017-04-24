@@ -23,6 +23,6 @@ export class AppComponent implements OnInit {
   }
 
   private initProducts() : void {
-     this.products = this.productService.getProducts();
+    this.productService.getProducts().then(products => this.products = products);
   }
 }
