@@ -12,10 +12,9 @@ import { ProductService } from './product.service';
 export class AppComponent implements OnInit {
   title = 'Product Landing Page';
   products:string[];
+  errorMessage: string;
 
-  constructor(private productService: ProductService) {
-    //
-  }
+  constructor(private productService: ProductService) {}
 
   // lifecycle hook method
   ngOnInit(): void {
@@ -23,6 +22,9 @@ export class AppComponent implements OnInit {
   }
 
   private initProducts() : void {
-    this.productService.getProducts().then(products => this.products = products);
+    this.productService.getProducts()
+                     .subscribe(
+                       products => this.products = products,
+                       error =>  this.errorMessage = <any>error);
   }
 }
