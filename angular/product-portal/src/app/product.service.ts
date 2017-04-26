@@ -7,8 +7,8 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class ProductService {
-    // private productsUrl = 'http://localhost:5000/api/heroes';
-    private productsUrl = 'assets/products.json';
+    private productsUrl = 'http://localhost:10000/api/Product';
+    //private productsUrl = 'assets/products.json';
 
     constructor (private http: Http) {}
 
