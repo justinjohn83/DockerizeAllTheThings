@@ -2,3 +2,7 @@ aspnet/.system
 aspnet/data
 aspnet/log
 aspnet/obj
+java/build
+.classpath
+.project
+settings.json

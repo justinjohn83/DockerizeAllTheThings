@@ -1,0 +1,6 @@
+zuul:
+  routes:
+    products:
+      path: /api/Product/**
+      url: http://localhost:5000/api/Product
+      
