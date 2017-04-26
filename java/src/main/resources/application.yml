@@ -2,5 +2,4 @@ zuul:
   routes:
     products:
       path: /api/Product/**
-      url: http://localhost:5000/api/Product
-      
+      url: http://${host_ip:localhost}:5000/api/Product

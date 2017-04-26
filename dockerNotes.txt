@@ -1,4 +1,5 @@
 docker run -d --name angular -p 9001:80 angular
 docker run -d  --name products-db -p 1433:1433 -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=runningdockercontainersisawesome123!' microsoft/mssql-server-linux
 docker run -d --name products-web -p 5000:80 products-web
-docker run -d --name api-gateway -p 10000:8080 api-gateway
+#Determined via ip route|awk '/default/ { print $3 }' inside container tested via docker run -i -t --entrypoint /bin/sh api-gateway
+docker run -d --name api-gateway -p 10000:8080 -e 'host_ip=172.17.0.1' api-gateway
