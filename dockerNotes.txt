@@ -3,3 +3,7 @@ docker run -d  --name products-db -p 1433:1433 -e 'ACCEPT_EULA=Y' -e 'SA_PASSWOR
 docker run -d --name products-web -p 5000:80 products-web
 #Determined via ip route|awk '/default/ { print $3 }' inside container tested via docker run -i -t --entrypoint /bin/sh api-gateway
 docker run -d --name api-gateway -p 10000:8080 -e 'host_ip=172.17.0.1' api-gateway
+
+docker build -t food-service .
+docker run -d --name food-service -p 3000:3000 food-service
+

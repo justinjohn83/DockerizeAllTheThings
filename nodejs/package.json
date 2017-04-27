@@ -1,0 +1,14 @@
+{
+  "name": "foods-service",
+  "version": "0.0.1",
+  "description": "Node.js REST API Example",
+  "author": "Justin Montgomery <jmontgomery@gamesalutes.com>",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js"
+  }
+}
