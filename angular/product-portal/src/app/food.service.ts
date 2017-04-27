@@ -7,15 +7,14 @@ import 'rxjs/add/operator/map';
 import {DataService} from './dataService.service'
 
 @Injectable()
-export class ProductService extends DataService {
-    private productsUrl = 'http://localhost:10000/api/Product';
-    //private productsUrl = 'assets/products.json';
+export class FoodService extends DataService {
+    private url = 'http://localhost:10000/api/food';
 
     constructor (http: Http) {
       super(http);
     }
 
-    getProducts(): Observable<string []> { 
-      return this.getData(this.productsUrl);
+    getFoods(): Observable<string []> { 
+      return this.getData(this.url);
     }
 }
