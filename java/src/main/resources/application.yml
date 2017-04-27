@@ -3,3 +3,6 @@ zuul:
     products:
       path: /api/Product/**
       url: http://${host_ip:localhost}:5000/api/Product
+    foods:
+      path: /api/food/**
+      url: http://${host_ip:localhost}:3000/api/food
