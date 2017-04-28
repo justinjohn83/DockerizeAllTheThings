@@ -1,0 +1,25 @@
+version: "3"
+services:
+  api-gateway:
+    image: api-gateway
+    build: ./java
+    ports:
+      - "10000:8080"
+    environment:
+      - host_ip=172.17.0.1
+  product-service:
+    image: product-service
+    build: ./aspnet
+    ports:
+      - "5000:80"
+  food-service:
+    image: food-service
+    build: ./nodejs
+    ports:
+      - "3000:3000"
+  portal:
+    image: product-portal
+    build: ./angular/product-portal
+    ports:
+      - "9001:80"
+      
