@@ -1,5 +1,6 @@
 # Dockerize All The Things
 Example code for Chicago Code Camp 2017 Session "Dockerize All the Things"
+[Presentation Link](dockerizeAllTheThings.pptx)
 
 ## Getting Started
 #### 1) Install Docker
