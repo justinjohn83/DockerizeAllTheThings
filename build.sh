@@ -8,7 +8,7 @@ popd
 
 echo "Building .NET app..."
 pushd .
-cd aspnet && dotnet build && dotnet publish
+cd aspnet && dotnet restore && dotnet build && dotnet publish
 popd
 
 echo "Building Java app..."
