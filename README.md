@@ -33,7 +33,6 @@ https://www.microsoft.com/net/core#macos
 #### Run Docker containers
 ``` docker-compose up ```
 
-
 ## Useful debugging Commands
  #### Inspect Running Container
   ``` docker exec -i -t <containerName> sh ```

@@ -6,7 +6,7 @@ services:
     ports:
       - "10000:8080"
     environment:
-      - host_ip=172.17.0.1
+      - SPRING_PROFILES_ACTIVE=prod
   product-service:
     image: product-service
     build: ./aspnet
@@ -22,4 +22,3 @@ services:
     build: ./angular/product-portal
     ports:
       - "9001:80"
-      

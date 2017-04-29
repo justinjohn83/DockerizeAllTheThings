@@ -1,0 +1,8 @@
+zuul:
+  routes:
+    products:
+      path: /api/Product/**
+      url: http://product-service/api/Product
+    foods:
+      path: /api/food/**
+      url: http://food-service:3000/api/food
