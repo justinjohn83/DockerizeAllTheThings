@@ -1,16 +1,22 @@
 <md-toolbar color="primary">
-  Products
+  All The Things?
 </md-toolbar>
 
 <div class="app-content">
-  <md-card>
-    <md-list>
-      <md-list-item *ngFor="let product of products">{{ product }}</md-list-item>
-    </md-list>
+  <md-card color="secondary">
+    <md-card-header><b>Pants</b></md-card-header>
+    <md-card-content>
+      <md-list>
+        <md-list-item *ngFor="let product of products">{{ product }}</md-list-item>
+      </md-list>
+    </md-card-content>
   </md-card>
-  <md-card>
-    <md-list>
-      <md-list-item *ngFor="let food of foods">{{ food }}</md-list-item>
-    </md-list>
+  <md-card color="secondary">
+    <md-card-header><b>Food</b></md-card-header>
+    <md-card-content>
+      <md-list>
+        <md-list-item *ngFor="let food of foods">{{ food }}</md-list-item>
+      </md-list>
+    </md-card-content>
   </md-card>
 </div>
