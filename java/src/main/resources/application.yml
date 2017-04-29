@@ -6,3 +6,8 @@ zuul:
     foods:
       path: /api/food/**
       url: http://${host_ip:localhost}:3000/api/food
+# Alternatively if we are using docker-compose we are able to
+# resolve using the service name in compose-file and talk directly to container
+# without stepping out and communicating through host gateway like we do above
+# e.g. http://product-service:80/api/Product
+#      http://food-service:3000/api/food

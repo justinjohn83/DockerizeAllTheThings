@@ -1,8 +1,9 @@
 #!/bin/bash
+set -e
 
 echo "Building angular app..."
 pushd .
-cd angular/product-portal && ng build --aot
+cd angular/product-portal && ng build --aot --prod
 popd
 
 echo "Building .NET app..."
