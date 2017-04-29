@@ -12,7 +12,7 @@ namespace aspnet.Controllers
         [HttpGet]
         public IEnumerable<String> GetAll()
         {
-            return new String[] { "Jeans", "Khakis", "Cargo Shorts"}.AsEnumerable();
+            return new String[] { "Jeans", "Khakis", "Cargo Shorts" }.AsEnumerable();
         }
     }
 }
